@@ -220,6 +220,10 @@ main {
     width: 56%;
     border-radius: 200px;
 }
+.music div:hover {
+    background-image: url("../img/favicon.ico");
+    background-size: contain;
+}
 
 
 
@@ -228,7 +232,95 @@ footer {
     height: 100px;
     width: 100%;
     overflow: hidden;
-
-    /* test */
+    display: flex;
+    justify-content: space-between;
     background-color: rgb(40, 40, 40);
+    color: grey;
+}
+
+/* play */
+.music-play {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.music-play div img {
+    height: 55px;
+}
+.music-play div {
+    margin-left: 15px;
+}
+.music-play div h5 {
+    color: white;
+}
+.music-play div span {
+    font-size: 13px;
+}
+.music-play div span:hover {
+    text-decoration: underline;
+    color: white;
+}
+.music-play div:nth-of-type(3):hover,
+.music-play div:nth-of-type(4):hover {
+    color: white;
+}
+
+/* music bar */
+/* bar */
+.music-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icons i {
+    margin-right: 40px;
+    margin-top: 15px;
+    font-size: 18px;
+    color: white
+}
+.icons i:nth-of-type(3) {
+    font-size: 30px;
+}
+.fa-play-circle:hover {
+    transform: scale(1.2);
+}
+/* time */
+.time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    margin-top: 20px;
+}
+.time div {
+    margin-right: 35px;
+}
+.time:nth-of-type(2) {
+    height: 5px;
+    width: 40px;
+    color: white;
+}
+/* da sostituire */
+.time div input {
+    width: 400px;
+}
+
+/* volume */
+.music-volume {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+.music-volume div {
+    margin-right: 20px;
+}
+.music-volume:nth-of-type(4) {
+    width: 17px;
 }
