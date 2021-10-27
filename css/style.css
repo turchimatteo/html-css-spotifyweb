@@ -12,7 +12,15 @@ body {
 .web-app {
     height: 100vh;
     width: 100%;
+    
 }
+.btn {
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+}
+
+/* Barra upgrade */
 .barra-upgrade {
     height: 100px;
     width: calc(100% - 250px);
@@ -21,6 +29,20 @@ body {
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
+.barra-upgrade a {
+    text-decoration: none;
+    position: fixed;
+    top: 10px;
+    right: 22px;
+    font-size: 13px;
+    padding: 15px 30px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.barra-upgrade a:hover {
+    transform: scale(1.2);
+}
+
 
 /* MAIN */
 main {
@@ -38,31 +60,95 @@ main {
     width: 250px;
     display: flex;
     flex-direction: column;
-    color: white;
-
-
-    /* test */
-    background-color: lightseagreen;
+    color: grey;
+    padding-left: 15px;
+    background-color: black;
 }
+
+/* logo */
 .logo {
     padding: 20px;
 }
+
+/* start */
 .start {
-    color: white;
     margin-top: 10px;
+}
+.start ul {
     list-style-type: none;
 }
+.start ul li {
+    padding: 7px;
+}
+.start ul li img {
+    height: 26px;
+    vertical-align: middle;
+    
+}
+.start ul li:first-child {
+    border-left: 3px solid lawngreen;
+    color: white;
+}
+.start ul li:hover {
+    color: white;
+}
+/* playlist */
 .playlist {
     overflow: hidden;
     flex-grow: 1;
+    margin-top: 15px;
 }
 .crea-playlist {
     font-weight: 800;
     font-size: 18px;
+    margin-top: 5px;
+}
+.crea-playlist i {
+    height: 50%;
 }
 .playlist ul {
     height: 85%;
     overflow-y: auto;
+    margin-top: 15px;
+}
+.playlist h3 {
+    color: white;
+}
+.crea-playlist:hover {
+    color: white;
+}
+.playlist ul li:hover {
+    color: white;
+}
+
+/* user */
+.user img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    background-color: grey;
+    border-radius: 30px;
+    color: white;
+}
+.user h3 {
+    display: inline-block;
+    color: white;
+    margin-top: 10px;
+}
+.user div {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.user div img {
+    background-color: black;
+    height: 20px;
+}
+.user hr {
+    width: 80%;
+    border: 1px solid grey;
+}
+.user div:hover {
+    color: white;
 }
 
 
@@ -75,8 +161,67 @@ main {
     overflow-y: auto;
 
     /* test */
-    background-color: lightsalmon;
+    background-color: rgb(14, 19, 31);
 }
+
+/* menu */
+.menu {
+    text-align: center;
+    color: grey;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.menu div {
+    margin-left: 25px;
+}
+.menu div:first-child {
+    border-bottom: 2px solid lawngreen;
+}
+.menu div:hover {
+    color: white;
+}
+
+/* music */
+.home h2 {
+    margin-top: 25px;
+    color: white;
+    margin-left: 15px;
+}
+.music {
+    display: flex;
+    margin-top: 20px;
+    color: grey;
+    margin-left: 10px;
+    text-align: center;
+    flex-direction: row;
+
+}
+.music div img {
+    width: 85%;
+}
+.stranger {
+    width: 24%;
+}
+.music div h4 {
+    color: white;
+    margin-top: 10px;
+}
+.home span {
+    color: grey;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.creato div img {
+    width: 56%;
+}
+.artisti div img {
+    width: 56%;
+    border-radius: 200px;
+}
+
+
 
 /* FOOTER */
 footer {
@@ -85,5 +230,5 @@ footer {
     overflow: hidden;
 
     /* test */
-    background-color: lightcoral;
+    background-color: rgb(40, 40, 40);
 }
