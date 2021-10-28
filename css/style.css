@@ -324,3 +324,16 @@ footer {
 .music-volume:nth-of-type(4) {
     width: 17px;
 }
+
+/* RESPONSIVE */
+@media screen and (max-widht: 700 ) {
+    .music {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-widht: 600 ) {
+    
+}
+@media screen and (max-widht: 500 ) {
+    
+}
