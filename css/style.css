@@ -193,20 +193,22 @@ main {
     display: flex;
     margin-top: 20px;
     color: grey;
-    margin-left: 10px;
+    margin-left: 20px;
     text-align: center;
     flex-direction: row;
 
 }
 .music div img {
-    width: 85%;
+    max-width: 200px;
+    margin-left: 30px;
 }
-.stranger {
+/* .stranger {
     width: 24%;
-}
+} */
 .music div h4 {
     color: white;
     margin-top: 10px;
+    max-width: 190px;
 }
 .home span {
     color: grey;
@@ -214,10 +216,10 @@ main {
     margin-top: 20px;
 }
 .creato div img {
-    width: 56%;
+    max-width: 200px;
 }
 .artisti div img {
-    width: 56%;
+    max-width: 200px;
     border-radius: 200px;
 }
 .music div:hover {
@@ -326,14 +328,15 @@ footer {
 }
 
 /* RESPONSIVE */
-@media screen and (max-widht: 700 ) {
+@media screen and (max-width: 700px ) {
     .music {
         flex-wrap: wrap;
+       
     }
 }
-@media screen and (max-widht: 600 ) {
+@media screen and (max-width: 600px ) {
     
 }
-@media screen and (max-widht: 500 ) {
+@media screen and (max-width: 500px ) {
     
 }
